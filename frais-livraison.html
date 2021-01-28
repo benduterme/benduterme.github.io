@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>La Gourmandise</title>
+    <meta name="keywords" content="Chocolaterie La Gourmandise, chocolats Bouillon">
+    <meta name="description" content="La Gourmandise propose les meilleurs chocolats belges à Bouillon. Ils sont créés par les marques Ovidias et Pralibel.">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Chocolaterie La Gourmandise à Bouillon">
+    <meta property="description" content="La Gourmandise propose les meilleurs chocolats belges à Bouillon. Ils sont créés par les marques Ovidias et Pralibel.">
+    <link rel="stylesheet" href="./src/styles/reset.css">
+    <link rel="stylesheet" href="./src/styles/style.css">
+    <link rel="icon" href="./favicon.png">
+    <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.7.3/dist/alpine.min.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1 id="title"><a href="index.html">La Gourmandise</a><a href="https://fr-fr.facebook.com/lagourmandisebouillon/" target="_blank"><img class="facebook" src="./src/img/logo-facebook.png" alt="Logo Facebook"></a></h1>
+        <nav class="normal-nav">
+            <ul>
+                <li class="nav-container"><a class="nav-element open brown" href="./index.html">ACCUEIL</a></li>
+                <li class="dropdown">
+                    <a class="open brown nav-container nav-element" href="./chocolats.html">CHOCOLATS</a>
+                    <div class="dropdown-content">
+                        <a class="nav-element open" href="./pralibel/pralibel.html">PRALIBEL</a>
+                        <a class="nav-element open" href="./ovidias/ovidias.html">OVIDIAS</a>
+                    </div>
+                </li>
+                <li class="nav-container"><a class="nav-element open bold brown" href="./shop.html">E-SHOP</a></li>
+                <li class="nav-container"><a class="nav-element open brown" href="./boutique.html">BOUTIQUE</a></li>
+                <li class="nav-container"><a class="nav-element open brown" href="./contact.html">CONTACT</a></li>
+            </ul>
+        </nav>
+        <nav id="special-nav">
+            <ul>
+                <li id="special-nav-element">&#9776;</li>
+            </ul>
+        </nav>
+        <nav id="small-nav">
+            <ul>
+                <li class="open brown" id="close-menu">&times;</li>
+                <li class="small-nav-container"><a class="open brown small-nav-element" href="./index.html">ACCUEIL</a></li>
+                <li class="small-nav-container dropdown-container">
+                    <div class="flex-container">
+                        <a class="open brown small-nav-element" href="./chocolats.html">CHOCOLATS</a>
+                        <span id="dropdown-button">&#x25B6;</span>
+                    </div>
+                    <ul id="small-dropdown-content">
+                        <li><a class="beige open small-nav-element" href="./pralibel/pralibel.html">PRALIBEL</a></li>
+                        <li><a class="beige open small-nav-element" href="./ovidias/ovidias.html">OVIDIAS</a></li>
+                    </ul>
+                </li>
+                <li class="small-nav-container"><a class="bold open brown small-nav-element" href="./shop.html">E-SHOP</a></li>
+                <li class="small-nav-container"><a class="open brown small-nav-element" href="./boutique.html">BOUTIQUE</a></li>
+                <li class="small-nav-container"><a class="open brown small-nav-element" href="./contact.html">CONTACT</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section class="section-div open">
+        <div class="flex-container chocolate-section">
+            <div class="back-div flex-container">
+                <a class="flex-container" id="back-link" href="./shop.html">
+                    <h6 class="open back-text" id="retour-text">&#129136; <span class="back-delete">Retour au shop</span></h6>
+                </a>
+            </div>
+            <h4 class="law-title open brown">Frais de livraison</h4>
+            <div class="back-div"></div>
+        </div>
+        <table class="delivery-fee">
+            <thead>
+                <tr>
+                    <th class="pays-title padding">Pays</th>
+                    <th rowspan="2" class="frais-pays">Belgique ou Luxembourg</th>
+                    <th rowspan="2" class="frais-pays">France</th>
+                    <th rowspan="2" class="frais-pays">Espagne</th>
+                </tr>
+                <tr>
+                    <th class="poids-title padding">Poids max</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="poids-text padding">0,5 kg</td>
+                    <td class="frais-pays">3,75 €</td>
+                    <td class="frais-pays">5,90 €</td>
+                    <td class="frais-pays">9,00 €</td>
+                </tr>
+                <tr>
+                    <td class="poids-text padding">1 kg</td>
+                    <td class="frais-pays">3,75 €</td>
+                    <td class="frais-pays">6,60 €</td>
+                    <td class="frais-pays">9,80 €</td>
+                </tr>
+                <tr>
+                    <td class="poids-text padding">2 kg</td>
+                    <td class="frais-pays">3,75 €</td>
+                    <td class="frais-pays">7,90 €</td>
+                    <td class="frais-pays">10,50 €</td>
+                </tr>
+                <tr>
+                    <td class="poids-text padding">3 kg</td>
+                    <td class="frais-pays">3,75 €</td>
+                    <td class="frais-pays">7,90 €</td>
+                    <td class="frais-pays">12,80 €</td>
+                </tr>
+                <tr>
+                    <td class="poids-text padding">5 kg</td>
+                    <td class="frais-pays">4,00 €</td>
+                    <td class="frais-pays">9,20 €</td>
+                    <td class="frais-pays">15,20 €</td>
+                </tr>
+                <tr>
+                    <td class="poids-text padding">7 kg</td>
+                    <td class="frais-pays">4,00 €</td>
+                    <td class="frais-pays">10,40 €</td>
+                    <td class="frais-pays">17,40 €</td>
+                </tr>
+                <tr>
+                    <td class="poids-text padding">10 kg</td>
+                    <td class="frais-pays">5,00 €</td>
+                    <td class="frais-pays">14,90 €</td>
+                    <td class="frais-pays">22,80 €</td>
+                </tr>
+                <tr>
+                    <td class="poids-text padding">15 kg</td>
+                    <td class="frais-pays">5,00 €</td>
+                    <td class="frais-pays">18,50 €</td>
+                    <td class="frais-pays">27,50 €</td>
+                </tr>
+            </tbody>
+        </table>
+        <p class="section-text">Les prix contiennent la TVA belge de 21 %.</p>
+    </section>
+    <footer class="footer beige">
+        <div class="footer-flex footer-div">
+            <div>
+                <p class="open">La Gourmandise</p>
+                <p class="open">Quai de la Maladrerie 8</p>
+                <p class="open">6830 Bouillon</p>
+                <p class="open">Belgique</p>
+                <br>
+            </div>
+            <div class="right-footer">
+                <p><a class="open special-link beige" href="./contact.html">Contact</a></p>
+                <p><a class="open beige special-link" href="mailto:lagourmandise96@gmail.com">&#9993; lagourmandise96@gmail.com</a></p>
+                <p class="open">&#9990; 061 46 78 48</p>
+                <p class="open">TVA: BE 0457.902.653</p>
+                <br>
+            </div>
+        </div>
+        <div class="footer-flex-center">
+            <p><a class="open special-link beige" href="./plan-site.html">Plan du site</a></p>
+            <p class="footer-disappear">&nbsp;&#8226;&nbsp;</p>
+            <p><a class="open special-link beige" href="./utilisation.html">Conditions d'utilisation</a></p>
+            <p class="footer-disappear">&nbsp;&#8226;&nbsp;</p>
+            <p><a class="open special-link beige" href="./confidentialite.html">Politique de confidentialité</a></p>
+            <p class="footer-disappear">&nbsp;&#8226;&nbsp;</p>
+            <p class="open">Créé par Ben Duterme</p>
+        </div>
+    </footer>
+    <script src="./lib/styles/styles.js"></script>
+</body>
+</html>

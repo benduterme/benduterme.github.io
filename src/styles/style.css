@@ -1,0 +1,1150 @@
+/* Fonts imported */
+
+@font-face {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: local('Open Sans Regular'), local('OpenSans-Regular'), url(https://fonts.gstatic.com/s/opensans/v17/mem8YaGs126MiZpBA-UFVZ0b.woff2) format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+  }
+  
+  @font-face {
+    font-family: 'Courgette';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: local('Courgette Regular'), local('Courgette-Regular'), url(https://fonts.gstatic.com/s/courgette/v7/wEO_EBrAnc9BLjLQAUk1VvoK.woff2) format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+  }
+
+/* Universal Styles */
+
+html {
+    font-size: 18px;
+}
+
+.open {
+    font-family: 'Open Sans', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.brown {
+    color: #8D6E63;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.flex-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.left-flex {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.wrap-flex {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.link {
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.link:hover {
+    font-weight: 400;
+}
+
+.special-link {
+    text-decoration: none;
+}
+
+.special-link:hover {
+    font-weight: bold;
+}
+
+.beige {
+    color: beige;
+}
+
+.black {
+    color: black;
+}
+
+.underline {
+    text-decoration: underline;
+}
+
+.italic {
+    font-style: italic;
+}
+
+#top-img {
+    bottom: 1rem;
+    right: 1rem;
+    display: none;
+    position: fixed;
+    cursor: pointer;
+    z-index: 2;
+}
+
+#shop-top-img {
+    bottom: 5.3rem;
+    right: 1rem;
+    display: none;
+    position: fixed;
+    cursor: pointer;
+    z-index: 2;
+}
+
+#bottom-img {
+    display: none;
+    position: fixed;
+    cursor: pointer;
+    right: 1rem;
+    bottom: 1rem;
+    z-index: 2;
+}
+
+.red {
+    color: red;
+}
+
+/* Header */
+
+h1 {
+    font-family: Courgette;
+    font-size: 3.3rem;
+    background-color:#666;
+    color: #FFF;
+    text-align: center;
+    padding: 1rem 0;
+    line-height: 0.9;
+}
+
+a {
+    text-decoration: none;
+    color: #FFF;
+}
+
+nav {
+    background-color: beige;
+}
+
+nav ul {
+    text-align: center;
+}
+
+.nav-container {
+    display: inline;
+    box-sizing: border-box;
+    padding: 0 2.5rem;
+}
+
+.nav-element {
+    text-decoration: none;
+    font-size: 1.15rem;
+    text-align: center;
+    line-height: 2;
+}
+
+.nav-element:hover {
+    font-weight: bold;
+}
+
+/* Facebook */
+
+.facebook {
+    position: absolute;
+    right: 1rem;
+    width: 2rem;
+}
+
+/* Special nav */
+
+#special-nav-element {
+    text-align: center;
+    box-sizing: border-box;
+    cursor: pointer;
+    font-size: 1.6rem;
+    padding: 0.3rem 0;
+    color: #8D6E63;
+}
+
+#special-nav-element:hover {
+    color: white;
+}
+
+#special-nav {
+    display: none;
+}
+
+/* Small nav */
+
+.small-nav-container {
+    box-sizing: border-box;
+    padding: 10px 20px;
+}
+
+.small-nav-element {
+    text-decoration: none;
+    font-size: 1.35rem;
+    line-height: 2;
+}
+
+.small-nav-element:hover {
+    font-weight: bold;
+}
+
+#small-nav {
+    position: absolute;
+    width: 300px;
+    top: 0px;
+    z-index: 4;
+    height: 100%;
+    box-sizing: border-box;
+    left: -400px;
+    transition: left 0.3s linear;
+}
+
+#small-nav ul {
+    text-align: left;
+}
+
+#dropdown-button {
+    color: #8D6E63;
+    float: right;
+    font-size: 20px;
+    position: relative;
+    top: 10px;
+    cursor: pointer;
+}
+
+#small-dropdown-content {
+    display: none;
+    background-color: #8D6E63;
+    width: 100%;
+    padding-left: 10px;
+}
+
+#close-menu {
+    font-size: 3rem;
+    padding-right: 10px;
+    display: inline-block;
+    float: right;
+    cursor: pointer;
+}
+
+#close-menu:hover {
+    font-weight: bold;
+}
+
+/* Dropdown menu */
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+    cursor: default;
+}
+
+.dropdown-content {
+    position: absolute;
+    display: none;
+    z-index: 1;
+    background-color: #8D6E63;
+    width: 100%;
+}
+
+.dropdown-content a {
+    color: beige;
+    display: block;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* Index */
+
+.img-text-container {
+    margin: 1rem 0;
+    position: relative;
+}
+
+.text {
+    font-size: 2.5rem;
+    width: 100%;
+    line-height: 1.8;
+    background-color: black;
+    opacity: 0.6;
+    color: #FFF;
+    position: absolute;
+    z-index: 2;
+    padding-left: 1rem;
+    box-sizing: border-box;
+    bottom: 0;
+    text-align: center;
+    font-family: Courgette;
+}
+
+.long-img {
+    width: 100%;
+    z-index: 1;
+}
+
+.small-screen-text {
+    display: none;
+}
+
+/* Textes */
+
+.section-title {
+    font-size: 1.65rem;
+    margin-bottom: 1rem;
+    text-align: left;
+}
+
+.section-subtitle {
+    font-size: 1.4rem;
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+    text-align: left;
+}
+
+.section-text {
+    font-size: 1.1rem;
+    text-align: justify;
+    margin-bottom: 0.5rem;
+    line-height: 1.2;
+}
+
+.section-img {
+    width: 25rem;
+}
+
+#charte-qualité {
+    width: 35rem;
+    text-align: center;
+}
+
+.section-div {
+    width: 80%;
+    margin: 2rem auto;
+}
+
+.section-text-div {
+    width: 25rem;
+}
+
+.index-section-text-div {
+    width: 25rem;
+    margin-top: 1rem;
+}
+
+/* Chocolats */
+
+.chocolate-brand {
+    width: 19rem;
+    margin: 1rem;
+    box-sizing: border-box;
+    box-shadow: grey 0.2rem 0.2rem 0.2rem;
+    background-color: #F7F9F9;
+    padding: 1rem;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+.chocolate-div {
+    margin: 1rem;
+    box-sizing: border-box;
+    width: 11.8rem;
+    box-shadow: grey 0.2rem 0.2rem 0.2rem;
+    background-color: #F7F9F9;
+    padding: 1rem;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+.chocolate-div-choices {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    justify-content: flex-end;
+}
+
+.chocolate-img {
+    width: 100%;
+}
+
+.chocolate-img-container {
+    margin-bottom: 3rem;
+}
+
+.chocolate-title {
+    text-align: center;
+    font-size: 1.4rem;
+    margin-bottom: 1rem;
+}
+
+.chocolate-text {
+    text-align: center;
+    font-size: 1rem;
+    line-height: 1.3;
+    position: absolute;
+    bottom: 0;
+    margin: 1rem auto 10px auto;
+    left: 0;
+    right: 0;
+}
+
+.allergene {
+    text-align: center;
+}
+
+.symbol {
+    height: 1.1rem;
+    margin-right: 0.3rem;
+}
+
+.chocolate-brand-img {
+    width: 100%;
+}
+
+/* Sections légales*/
+
+.law-section {
+    text-align: center;
+    margin-bottom: 1.5rem;
+    border-bottom: #8D6E63 solid 0.2rem;
+    padding-bottom: 1rem;
+}
+
+.law-title {
+    text-align: center;
+    font-size: 1.7rem;
+}
+
+.law-text {
+    font-size: 0.9rem;
+    text-align: justify;
+    margin-bottom: 0.5rem;
+    line-height: 1.2;
+}
+
+.law-section-title {
+    font-size: 1.3rem;
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+    text-align: left;
+}
+
+.law-section-subtitle {
+    font-style: italic;
+    font-size: 1.1rem;
+    text-align: left;
+    margin-bottom: 0.5rem;
+}
+
+.inpage-law {
+    width: 60%;
+    height: 85vh;
+    z-index: 2;
+    background-color: white;
+    box-shadow: 0 0 2rem black;
+    padding: 1rem 0.5rem 0.5rem 0.5rem;
+    overflow: scroll;
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    display: none;
+}
+
+.close-law {
+    font-size: 3rem;
+    cursor: pointer;
+    text-align: right;
+    position: absolute;
+    top: 1vh;
+    right: 1vw;
+}
+
+.close-law-button {
+    width: 10rem;
+    height: 2.5rem;
+    font-size: 1rem;
+    background-color: #8D6E63;
+    color: #FFF;
+    border-radius: 0.5rem;
+    border: hidden;
+    box-sizing: border-box;
+    cursor: pointer;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.open-law {
+    cursor: pointer;
+}
+
+/* Titres chocolats */
+
+.chocolate-section {
+    text-align: center;
+    flex: 3;
+    margin-bottom: 1rem;
+    border-bottom: #8D6E63 solid 0.2rem;
+    padding-bottom: 0.5rem;
+}
+
+.chocolate-section-title {
+    text-align: center;
+    font-size: 2rem;
+}
+
+.chocolate-subsection {
+    background-color: beige;
+    font-size: 1.7rem;
+    padding: 0.5rem 0 0.5rem 0.5rem;
+    margin: 0.5rem 0;
+}
+
+.back-div {
+    justify-content: left;
+    margin-top:0.8rem;
+    flex: 1;
+}
+
+#back-link {
+    text-decoration: none;
+    transition: background-color 0.5s;
+    padding: 0.3rem;
+}
+
+#retour-text {
+    transition: color 0.5s;
+}
+
+.back-text {
+    font-size: 1.2rem;
+    color: #8D6E63;
+}
+
+/* Store */
+
+.store-div {
+    width: 25rem;
+    margin-right: 1rem;
+}
+
+.store-images {
+    width: 20rem;
+}
+
+.store-img {
+    width: 20rem;
+    height: 20rem;
+}
+
+.gourmandise-logo {
+    width: 20rem;
+    margin-bottom: 0.8rem;
+}
+
+/* Shop */
+ 
+ .add-substract {
+     background-color: #8D6E63;
+     color: beige;
+     border-radius: 50%;
+     width: 1.5rem;
+     height: 1.5rem;
+     border: none;
+     cursor: pointer;
+ }
+ 
+ .add-substract:disabled {
+     cursor: auto;
+     background-color: hsl(16, 18%, 80%);
+ }
+ 
+ input[type=number]::-webkit-inner-spin-button {
+     -webkit-appearance: none;
+   }
+ 
+ .number-desired {
+     width: 2.9rem;
+     text-align: center;
+     height: 1.5rem;
+     font-size: 1rem;
+     background-color: #F7F9F9;
+     border: 1px #8D6E63 solid;
+     border-radius: 8px;
+     padding: 3px 12px;
+ }
+
+.shop-chocolate-img {
+    width: 100%;
+}
+
+.shop-chocolate-text {
+    text-align: center;
+    font-size: 1rem;
+    margin-top: 1rem;
+    line-height: 1.3;
+}
+ 
+ .quantity {
+     margin-top: 0.8rem;
+     margin-left: 0.5rem;    
+ }
+ 
+ .prices {
+     margin: 1rem auto;
+ }
+ 
+ .prices td {
+     width: 7rem;
+ }
+ 
+ .price-quantity {
+     color: #8D6E63;
+     font-size: 1.2rem;
+     font-weight: bold;
+     text-align: center;
+ }
+ 
+ .price-number {
+     font-size: 1.1rem;
+     text-align: center;
+ }
+ 
+ .order-resume {
+     border: hsl(16, 18%, 47%) solid 2px;
+ }
+ 
+ .your-order {
+     background-color: #8D6E63;
+     color: beige;
+     font-size: 1.2rem;
+     text-align: left;
+ }
+ 
+ .padding {
+     padding: 0.5rem;
+ }
+ 
+ .order-title {
+     font-size: 1.1rem;
+     color: #8D6E63;
+     text-align: center;
+ }
+ 
+ .order-detail {
+     font-size: 1rem;
+ }
+ 
+ .article-name {
+     width: 18rem;
+ }
+ 
+ .article-quantity {
+     width: 4rem;
+     text-align: center;
+ }
+ 
+ .article-price {
+     width: 6rem;
+     text-align: center;
+ }
+
+ .total-weight {
+     text-align: left;
+ }
+ 
+ .order-resume tfoot {
+     border-top: #8D6E63 solid 2px;
+ }
+
+ .total-price {
+     border-right: #8D6E63 solid 2px;
+ }
+
+ .action {
+     text-align: center;
+ }
+
+ .action-button {
+     color: #8D6E63;
+     font-size: 1.5rem;
+     background-color: white;
+     border: none;
+     cursor: pointer;
+ }
+
+ .no-border {
+     border-right: none;
+     border-bottom: none;
+ }
+
+ .shop-table-border-bottom {
+     border-bottom:hsl(16, 18%, 47%) solid 2px;
+ }
+
+/* Schedule table */
+
+.table-text {
+    font-size: 1rem;
+}
+
+td {
+    width: 15rem;
+    display: table-cell;
+}
+
+tr {
+    height: 2rem;
+    display: table-row;
+}
+
+.store-div table {
+    display: table;
+}
+
+.day-col {
+    width: 8rem;
+}
+
+/* Frais de livraison */
+
+.delivery-fee {
+    border-collapse: collapse;
+    border-right: hsl(16, 18%, 47%) 2px solid;
+    border-left: hsl(16, 18%, 47%) 2px solid;
+    border-bottom: hsl(16, 18%, 47%) 2px solid;
+    margin: 0 auto;
+    margin-bottom: 1rem;
+}
+
+.delivery-fee thead {
+    background-color: #8D6E63;
+    color: beige;
+    font-size: 1.2rem;
+    text-align: left;
+}
+
+.delivery-fee thead th {
+    border-right: beige 1px solid;
+}
+
+.frais-pays {
+    vertical-align: middle;
+    width: 10rem;
+    text-align: center;
+}
+
+.pays-title {
+    vertical-align: middle;
+    text-align: right;
+    width: 8rem;
+    border-bottom: beige 1px solid;
+}
+
+.poids-title {
+    vertical-align: middle;
+    text-align: left;
+    width: 8rem;
+}
+
+.delivery-fee tbody td {
+    border: hsl(16, 18%, 47%) solid 1px;
+}
+
+.poids-text {
+    vertical-align: middle;
+    width: 8rem;
+}
+
+/* Form */
+
+.errors, .success {
+    padding: 1em;
+}
+
+.errors .error-msg {
+    background: #FF3D3D;
+    color: #FFE5E5;
+    font-weight: bold;
+    padding: .5em .2em;
+    margin-top: .2em;
+}
+
+.success .success-msg {
+    background: #2b8a3e;
+    color: #f8f9fa;
+    font-weight: bold;
+    padding: .5em .2em;
+    margin-top: .2em;
+}
+
+label {
+    font-size: 1rem;
+    display: inline-block;
+    width: 7rem;
+    margin-bottom: 0.5rem;
+}
+
+input {
+    font-size: 1rem;
+    width: 25rem;
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+    border: #8D6E63 1px solid;
+    box-sizing: border-box;
+}
+
+.form-div {
+    margin: 1rem 0;
+    box-sizing: border-box;
+}
+
+.radio-button {
+    margin-left: 1rem;
+}
+
+.radio-button label {
+    width: 25rem;
+}
+
+.radio-button input {
+    width: 1rem;
+}
+
+.country {
+    margin-left: 1.3rem;
+    margin-bottom: 1rem;
+}
+
+.radio-button-2 {
+    margin-left: 2rem;
+}
+
+.radio-button-2 label {
+    width: 15rem;
+}
+
+.radio-button-2 input {
+    width: 1rem;
+}
+
+.input-text {
+    font-size: 1rem;
+}
+
+.delivery-address {
+    margin-left: 1rem;
+}
+
+.delivery-address label {
+    width: 20rem;
+    margin-top: 1rem;
+}
+
+.delivery-address input {
+    width: 30rem;
+}
+
+.big-screen-address {
+    display: block;
+}
+
+.small-screen-address {
+    display: none;
+}
+
+#code-postal {
+    width: 6.5rem;
+}
+
+#code-postal-input {
+    width: 5.5rem;
+    margin-right: 1rem;
+}
+
+#ville {
+    text-align: left;
+}
+
+#ville-input {
+    width: 23.5rem;
+}
+
+#small-code-postal {
+    width: 6.5rem;
+}
+
+#small-code-postal-input {
+    width: 5.5rem;
+}
+
+#small-ville {
+    text-align: left;
+}
+
+#small-ville-input {
+    width: 23.5rem;
+}
+
+#object {
+    width: 25rem;
+}
+
+#message {
+    width: 40rem;
+    height: 5rem;
+    padding: 0.5rem;
+    font-size: 1rem;
+    border-radius: 0.5rem;
+    border: #8D6E63 1px solid;
+    box-sizing: border-box;
+}
+
+#message-title {
+    vertical-align: top;
+}
+
+#submit {
+    width: 10rem;
+    height: 2.5rem;
+    font-size: 1rem;
+    background-color: #8D6E63;
+    color: #FFF;
+    border-radius: 0.5rem;
+    border: hidden;
+    position: relative;
+    left: 7.25rem;
+    box-sizing: border-box;
+    cursor: pointer;
+}
+
+/* Footer */
+
+.footer {
+    background-color: #666;
+    margin: 0 auto;
+    padding: 1rem;
+    font-size: 0.9rem;
+}
+
+.footer-div {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.footer-flex {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-flex-center {
+    display: flex;
+    justify-content: center;
+}
+
+.right-footer {
+    text-align: right;
+}
+
+/* Plan du site */
+
+.global-list li {
+    list-style-type: disc;
+    list-style-position: inside;
+}
+
+.sublist li {
+    list-style-type: circle;
+    margin-left: 1rem;
+}
+
+.sub-sublist li {
+    list-style-type: square;
+    margin-left: 2rem;
+}
+
+/* Media queries */
+
+@media only screen and (max-width: 1140px) {
+    .small-screen-text {
+        display: flex;
+    }
+
+    .large-screen-text {
+        display: none;
+    }
+
+    .index-section-text-div {
+        width: 50rem;
+    }
+}
+
+@media only screen and (max-width: 1070px) {
+    #message {
+        width: 30rem;
+    }
+}
+
+@media only screen and (max-width: 970px) {
+    html {
+        font-size: 15px;
+    }
+}
+
+@media only screen and (max-width: 830px) {
+    #chocolate-brand {
+        width: 15rem;
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    .normal-nav {
+        display: none;
+    }
+
+    #special-nav {
+        display: block;
+    }
+}
+
+@media only screen and (max-width: 720px) {
+    #message {
+        width: 25rem;
+    }
+    .back-delete {
+        display: none;
+    }
+
+    .footer-flex {
+        display: block;
+        text-align: center;
+    }
+
+    .footer-flex-center {
+        display: block;
+        text-align: center;
+    }
+
+    .footer-disappear {
+        display: none;
+    }
+
+    .right-footer {
+        text-align: center;
+    }
+}
+
+@media only screen and (max-width: 650px) {
+    .big-screen-address {
+        display: none;
+    }
+
+    .small-screen-address {
+        display: block;
+    }
+
+    .delivery-address input {
+        width: 23.5rem;
+    }
+
+    .radio-button label {
+        width: 20rem;
+    }
+}
+
+@media only screen and (max-width: 550px) {
+    #top-img {
+        width: 45px;
+        height: 45px;
+    }
+    
+    #bottom-img {
+        width: 45px;
+        height: 45px;
+    }
+
+    #shop-top-img {
+        width: 45px;
+        height: 45px;
+    }
+
+    #cgv {
+        width: 90%;
+        height: 95vh;
+    }
+
+    #charte-qualité {
+        width: 500px;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    html {
+        font-size: 13px;
+    }
+}
+
+@media only screen and (max-width: 450px) {
+    .text {
+        font-size: 1.5rem;
+    }
+
+    #charte-qualité {
+        width: 400px;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    #small-nav {
+        width: 100%;
+    }
+
+    #charte-qualité {
+        width: 375px;
+    }
+
+    h1 {
+        font-size: 2rem;
+        padding: 10px;
+    }
+
+    .chocolate-section-title {
+        font-size: 1.5rem;
+    }
+
+    input {
+        width: 100%;
+    }
+
+    #object {
+        width: 100%;
+    }
+
+    #message {
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 375px) {
+    tr {
+        height: 2.5rem;
+    }
+}

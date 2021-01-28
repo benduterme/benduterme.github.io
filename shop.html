@@ -1,0 +1,478 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>La Gourmandise</title>
+    <meta name="keywords" content="Chocolaterie La Gourmandise, chocolats Bouillon">
+    <meta name="description" content="La Gourmandise propose les meilleurs chocolats belges à Bouillon. Ils sont créés par les marques Ovidias et Pralibel.">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Chocolaterie La Gourmandise à Bouillon">
+    <meta property="description" content="La Gourmandise propose les meilleurs chocolats belges à Bouillon. Ils sont créés par les marques Ovidias et Pralibel.">
+    <link rel="stylesheet" href="./src/styles/reset.css">
+    <link rel="stylesheet" href="./src/styles/style.css">
+    <link rel="icon" href="./favicon.png">
+    <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.7.3/dist/alpine.min.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1 id="title"><a href="index.html">La Gourmandise</a><a href="https://fr-fr.facebook.com/lagourmandisebouillon/" target="_blank"><img class="facebook" src="./src/img/logo-facebook.png" alt="Logo Facebook"></a></h1>
+        <nav class="normal-nav">
+            <ul>
+                <li class="nav-container"><a class="nav-element open brown" href="./index.html">ACCUEIL</a></li>
+                <li class="dropdown">
+                    <a class="open brown nav-container nav-element" href="./chocolats.html">CHOCOLATS</a>
+                    <div class="dropdown-content">
+                        <a class="nav-element open" href="./pralibel/pralibel.html">PRALIBEL</a>
+                        <a class="nav-element open" href="./ovidias/ovidias.html">OVIDIAS</a>
+                    </div>
+                </li>
+                <li class="nav-container"><a class="nav-element open bold brown" href="./shop.html">E-SHOP</a></li>
+                <li class="nav-container"><a class="nav-element open brown" href="./boutique.html">BOUTIQUE</a></li>
+                <li class="nav-container"><a class="nav-element open brown" href="./contact.html">CONTACT</a></li>
+            </ul>
+        </nav>
+        <nav id="special-nav">
+            <ul>
+                <li id="special-nav-element">&#9776;</li>
+            </ul>
+        </nav>
+        <nav id="small-nav">
+            <ul>
+                <li class="open brown" id="close-menu">&times;</li>
+                <li class="small-nav-container"><a class="open brown small-nav-element" href="./index.html">ACCUEIL</a></li>
+                <li class="small-nav-container dropdown-container">
+                    <div class="flex-container">
+                        <a class="open brown small-nav-element" href="./chocolats.html">CHOCOLATS</a>
+                        <span id="dropdown-button">&#x25B6;</span>
+                    </div>
+                    <ul id="small-dropdown-content">
+                        <li><a class="beige open small-nav-element" href="./pralibel/pralibel.html">PRALIBEL</a></li>
+                        <li><a class="beige open small-nav-element" href="./ovidias/ovidias.html">OVIDIAS</a></li>
+                    </ul>
+                </li>
+                <li class="small-nav-container"><a class="bold open brown small-nav-element" href="./shop.html">E-SHOP</a></li>
+                <li class="small-nav-container"><a class="open brown small-nav-element" href="./boutique.html">BOUTIQUE</a></li>
+                <li class="small-nav-container"><a class="open brown small-nav-element" href="./contact.html">CONTACT</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section class="section-div open">
+        <h4 class="section-title brown">Achetez vos chocolats en ligne</h4>
+        <p class="section-text">Le coronavirus ne vous empêchera plus de manger vos chocolats préférés.</p>
+        <p class="section-text">La Gourmandise vous propose désormais de déguster vos chocolats <span><a class="open brown link" href="./pralibel/pralibel.html">Pralibel</a></span> et <span><a class="open brown link" href="./ovidias/ovidias.html">Ovidias</a></span> en toutes circonstances grâce à un système de bon de commande en ligne.</p>
+        <p class="section-text">Pour ce faire, il vous suffit de remplir le bon de commande ci-dessous. Une fois vos articles sélectionnés et vos coordonnées complétées, cliquez sur "Envoyer".</p>
+        <p class="section-text">Nous vous proposons de venir chercher votre commande en magasin ou nous pouvons la livrer au point relais Mondial Relay le plus proche de chez vous moyennant <a href="./frais-livraison.html" class="link brown">frais de port</a>.</p>
+        <p class="section-text">Vous aurez aussi la possibilité de choisir votre mode de paiement. Vous pouvez payer sur place ou bien effectuer un virement bancaire sur notre compte. Les paiements sont donc entièrement sécurisés. À noter que tous les prix sont TVA comprise.</p>
+        <p class="section-text">Lorsque nous recevrons votre commande, nous prendrons contact avec vous pour la finaliser.</p>
+        <p class="section-text">N'attendez plus et profitez de vos délicieux chocolats belges!</p>
+        <p class="section-text">Avant de passer commande, n'hésitez pas à lire nos <a href="./cgv.html" class="link brown">conditions générales de vente</a>.</p>
+    </section>
+
+    <img id="shop-top-img" src="./src/img/top.png" alt="Retour au top">
+    <img id="bottom-img" src="./src/img/bottom.png" alt="Aller en bas">
+
+    <section class="section-div open">
+        <h5 class="chocolate-subsection brown">Pralibel</h5>
+        <p class="section-text">Vous désirez un chocolat plus travaillé au niveau du goût? Alors les chocolats Pralibel sont faits pour vous. Nous vous proposons neuf assortiments de chocolats <span><a href="./pralibel/pralibel.html" class="open brown link">Pralibel</a></span>. Ils sont disponibles en ballotins de 250&nbsp;g, 500&nbsp;g et 1&nbsp;kg.</p>
+        <table class="prices">
+            <tr>
+                <td></td>
+                <td class="price-quantity">250 g</td>
+                <td class="price-quantity">500 g</td>
+                <td class="price-quantity">1 kg</td>
+            </tr>
+            <tr>
+                <td class="price-quantity">Prix</td>
+                <td class="price-number">7 €</td>
+                <td class="price-number">14 €</td>
+                <td class="price-number">28 €</td>
+            </tr>
+        </table>
+    </section>
+    <div x-data="shop()" x-init="() => mounted()">
+
+        <section class="section-div open wrap-flex">
+            <template x-for="article of getArticles('pralibel')" :key="article.id">
+                <div class="chocolate-div">
+                    <h5 class="chocolate-title brown" x-text="article.nom"></h5>
+                    <img class="shop-chocolate-img" :src="article.img" alt="">
+                    <div class="chocolate-div-choices">
+                        <template x-for="choix of article.choix">
+                            <div class="flex-container">
+                                <p class="shop-chocolate-text" x-text="choixStr(choix)"></p>
+                                <div class="quantity">
+                                    <button class="add-substract" @click="decremente(article, choix)" :disabled="choix.count==0">-</button>
+                                    <span class="number-desired" x-text="choix.count"></span>
+                                    <button class="add-substract" @click="incremente(article, choix)">+</button>
+                                </div>
+                            </div>
+                        </template>
+                    </div>
+                </div>
+            </template>
+        </section>
+
+        <section class="section-div open">
+            <h5 class="chocolate-subsection brown">Ovidias</h5>
+            <p class="section-text">Les chocolats Ovidias sont eux plus innovants au niveau de la conservation. Grâce à leur emballage unique, vous pouvez les conserver plus longtemps et directement au réfrigérateur. Un excellent mélange de goût et d'innovation. La Gourmandise vous propose huit assortiments de chocolats <span><a href="./ovidias/ovidias.html" class="open brown link">Ovidias</a></span>. Ces chocolats sont disponibles en ballotins de 250&nbsp;g, 500&nbsp;g et 1&nbsp;kg.</p>
+            <table class="prices">
+                <tr>
+                    <td></td>
+                    <td class="price-quantity">250 g</td>
+                    <td class="price-quantity">500 g</td>
+                    <td class="price-quantity">1 kg</td>
+                </tr>
+                <tr>
+                    <td class="price-quantity">Prix</td>
+                    <td class="price-number">5,50 €</td>
+                    <td class="price-number">11 €</td>
+                    <td class="price-number">22 €</td>
+                </tr>
+            </table>
+        </section>
+        <section class="section-div open wrap-flex">
+
+            <template x-for="article of getArticles('ovidias')" :key="article.id">
+                <div class="chocolate-div">
+                    <h5 class="chocolate-title brown" x-text="article.nom"></h5>
+                    <img class="shop-chocolate-img" :src="article.img" alt="">
+                    <div class="chocolate-div-choices">
+                        <template x-for="choix of article.choix">
+                            <div class="flex-container">
+                                <p class="shop-chocolate-text" x-text="choixStr(choix)"></p>
+                                <div class="quantity">
+                                    <button class="add-substract" @click="decremente(article, choix)" :disabled="choix.count==0">-</button>
+                                    <span class="number-desired" x-text="choix.count"></span>
+                                    <button class="add-substract" @click="incremente(article, choix)">+</button>
+                                </div>
+                            </div>
+                        </template>
+                    </div>
+                </div>
+            </template>
+        </section>
+
+
+        <section class="section-div open">
+            <h5 class="chocolate-subsection brown">Confiseries et spécialités</h5>
+            <p class="section-text">En plus des chocolats, nous vous proposons des confiseries et des spécialités créées par Pralibel et par Ovidias. Tout aussi délicieuses que les chocolats, elles vous raviront assurément!</p>
+        </section>
+        <section class="section-div open wrap-flex">
+
+
+            <template x-for="article of getArticles('confiseries')" :key="article.id">
+                <div class="chocolate-div">
+                    <h5 class="chocolate-title brown" x-text="article.nom"></h5>
+                    <img class="shop-chocolate-img" :src="article.img" alt="">
+                    <div class="chocolate-div-choices">
+                        <template x-for="choix of article.choix">
+                            <div class="flex-container">
+                                <p class="shop-chocolate-text" x-text="choixStr(choix)"></p>
+                                <div class="quantity">
+                                    <button class="add-substract" @click="decremente(article, choix)" :disabled="choix.count==0">-</button>
+                                    <span class="number-desired" x-text="choix.count"></span>
+                                    <button class="add-substract" @click="incremente(article, choix)">+</button>
+                                </div>
+                            </div>
+                        </template>
+                    </div>
+                </div>
+            </template>
+        </section>
+
+
+        <section class="section-div open">
+            <table class="order-resume open" id="order">
+                <thead class="your-order">
+                    <tr>
+                        <th colspan="4" class="padding">Votre commande:</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr class="brown order-title">
+                        <td class="article-name padding">Article</td>
+                        <td class="article-quantity padding">Quantité</td>
+                        <td class="article-price padding">Prix</td>
+                        <td class="padding"></td>
+                    </tr>
+                    <template x-for="[id, article] of getPanier()" :key="id">
+                        <tr class="order-detail">
+                            <td class="article-name padding" x-text="article.nom"></td>
+                            <td class="article-quantity padding" x-text="article.count"></td>
+                            <td class="article-price padding" x-text="article.prix.toFixed(2) + ' €'"></td>
+                            <td class="action">
+                                <button class="action-button" @click="resetArticlePanier(id)">&#x1F5D1;</button>
+                                <button class="action-button" @click="increaseArticlePanier(id)">+</button>
+                                <button class="action-button" @click="decreaseArticlePanier(id)">-</button>
+                            </td>
+                        </tr>
+                    </template>
+                </tbody>
+                <tfoot>
+                    <tr class="shop-table-border-bottom">
+                        <td class="total-weight padding">Poids total: <span x-text="getPoidsTotal().toFixed(2) + ' kg'"></span></td>
+                        <td class="order-title padding">Total:</td>
+                        <td class="article-price padding total-price" x-text="getTotal().toFixed(2) + ' €'"></td>
+                        <td x-show="user.recupMarchandise === 'Livraison'" class="article-price padding shop-table-border-bottom">+ <span x-text="getShippingPrice().toFixed(2)"></span> € de livraison</td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td class="order-title padding">Total à payer:</td>
+                        <td class="article-price padding total-price" x-text="getFinalTotal().toFixed(2) + ' €'"></td>
+                    </tr>
+                </tfoot>
+            </table>
+            <form action="#" method="post" @submit.prevent="sendEmail()">
+                <div class="form-div">
+                    <label class="open" for="name">Nom:<span class="red">*</span></label>
+                    <input class="open" type="text" name="lastname" x-model="user.nom">
+                </div>
+                <div class="form-div">
+                    <label class="open" for="first-name">Prénom:<span class="red">*</span></label>
+                    <input class="open" type="text" name="firstname" x-model="user.prenom">
+                </div>
+                <div class="form-div">
+                    <label class="open" for="email">E-mail:<span class="red">*</span></label>
+                    <input class="open" type="email" name="email" x-model="user.email">
+                </div>
+                <div class="form-div">
+                    <label class="open" for="phone">Téléphone:</label>
+                    <input class="open" type="tel" name="phone" x-model="user.telephone">
+                </div>
+                <div class="form-div">
+                    <label class="open" for="date">Date d'enlèvement souhaitée:<span class="red">*</span></label>
+                    <input class="open" type="text" name="date" x-model="user.date">
+                </div>
+                <p class="input-text open">Récupération de la marchandise<span class="red">*</span></p>
+                <div class="form-div">
+                    <div class="radio-button">
+                        <input name="delivery-option" type="radio" value="Magasin" x-model="user.recupMarchandise">
+                        <label class="open" for="Magasin">Enlèvement en magasin</label>
+                    </div>
+                    <div class="radio-button">
+                        <input name="delivery-option" type="radio" value="Livraison" x-model="user.recupMarchandise">
+                        <label class="open" for="Livraison">Livraison au point relais le plus proche de chez vous <span x-show="user.recupMarchandise === 'Livraison'">&#8226; <span x-text="getShippingPrice().toFixed(2) + ' € de frais de port'"></span></span></label>
+                    </div>
+                    <div class="form-div" id="country" x-show="user.recupMarchandise === 'Livraison'">
+                        <p class="open country">Pays de destination<span class="red">*</span></p>
+                        <div class="radio-button-2">
+                            <input name="delivery-country" type="radio" value="Belgique/Lux" x-model="user.paysLivraison">
+                            <label class="open" for="Belgique/Lux">Belgique ou Luxembourg</label>
+                        </div>
+                        <div class="radio-button-2">
+                            <input name="delivery-country" type="radio" value="France" x-model="user.paysLivraison">
+                            <label class="open" for="France">France</label>
+                        </div>
+                        <div class="radio-button-2">
+                            <input name="delivery-country" type="radio" value="Espagne" x-model="user.paysLivraison">
+                            <label class="open" for="Espagne">Espagne</label>
+                        </div>
+                        <div class="delivery-address">
+                            <label class="open" for="nom-prénom-destinataire">Nom et prénom du destinataire<span class="red">*</span></label>
+                        </div>
+                        <div class="delivery-address">
+                            <input class="open" type="text" name="nom-prénom-destinataire" x-model="user.destinataire">
+                        </div>
+                        <div class="delivery-address">
+                            <label class="open" for="adresse-destinataire">Adresse<span class="red">*</span></label>
+                        </div>
+                        <div class="delivery-address">
+                            <input class="open" type="text" name="adresse-destinataire" x-model="user.address">
+                        </div>
+                        <div class="big-screen-address">
+                            <div class="delivery-address">
+                                <label class="open" id="code-postal" for="code-postal">Code postal<span class="red">*</span></label>
+                                <label class="open" id="ville" for="ville-destinataire">Ville<span class="red">*</span></label>
+                            </div>
+                            <div class="delivery-address">
+                                <input class="open" id="code-postal-input" type="text" name="code-postal" x-model="user.codePostal">
+                                <input class="open" id="ville-input" type="text" name="ville-destinataire" x-model="user.ville">
+                            </div>
+                        </div>
+                        <div class="small-screen-address">
+                            <div class="delivery-address">
+                                <label class="open" id="small-code-postal" for="code-postal">Code postal<span class="red">*</span></label>
+                            </div>
+                            <div class="delivery-address">
+                                <input class="open" id="small-code-postal-input" type="text" name="code-postal" x-model="user.codePostal">
+                            </div>
+                            <div class="delivery-address">
+                                <label class="open" id="small-ville" for="ville-destinataire">Ville<span class="red">*</span></label>
+                            </div>
+                            <div class="delivery-address">
+                                <input class="open" id="small-ville-input" type="text" name="ville-destinataire" x-model="user.ville">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <p class="input-text open">Mode de paiement<span class="red">*</span></p>
+                <div class="form-div">
+                    <div class="radio-button">
+                        <input name="payment-option" type="radio" value="Sur place" x-model="user.modePaiement">
+                        <label class="open" for="Sur place">Paiement sur place</label>
+                    </div>
+                    <div class="radio-button">
+                        <input name="payment-option" type="radio" value="Virement" x-model="user.modePaiement">
+                        <label class="open" for="Virement">Virement bancaire</label>
+                    </div>
+                </div>
+                <div class="form-div">
+                    <p class="open">En cliquant sur "Envoyer", vous acceptez les <a class="link brown open-law" id="open-cgv">conditions générales de vente</a></p>
+                </div>
+                <div>
+                    <button class="open" id="submit" type="submit" @click.prevent="sendEmail()">Envoyer</button>
+                </div>
+                <div class="errors">
+                    <template x-for="error of errors">
+                        <div class="error-msg" x-text="error"></div>
+                    </template>
+                </div>
+                <div class="success">
+                    <template x-for="s of success">
+                    <div class="success-msg" x-text="s"></div>
+                    </template>
+                </div>
+            </form>
+        </section>
+
+        <section class="section-div open">
+            <div class="inpage-law" id="cgv">
+                <div class="law-section">
+                    <h4 class="law-title brown">Conditions générales de vente</h4>
+                    <div class="brown close-law" id="close-cgv">&times;</div>
+                </div>
+                <p class="law-text italic">Dernière modification: 24/12/2020</p>
+                <p class="law-section-title brown">Article 1 : Définitions.  </p>
+                <p class="law-text"><span class="bold brown">« La société « le Castel srl » »</span>: La société identifiée au point 2.1 des présentes conditions générales de vente ;</p>
+                <p class="law-text"><span class="bold brown">« Conditions générales »</span>: Les présentes conditions générales de vente dans leur intégralité.</p>
+                <p class="law-text"><span class="bold brown">« Le Site »</span>: Le Site de la société « la société « le Castel srl» », accessible via le lien suivant : ………………………..</p>
+                <p class="law-text"><span class="bold brown">« Le Vendeur »</span>: Désigne la société « le Castel srl» lorsqu’elle vend un ou plusieurs produits à un Acheteur dans le cadre des présentes conditions générales de vente.</p>
+                <p class="law-text"><span class="bold brown">« L’Acheteur »</span>: Ce terme désigne aussi bien le client personne physique qui achète à distance des produits proposés à la vente par la société « le Castel srl» à des fins qui n'entrent pas dans le cadre de son activité commerciale, industrielle, artisanale ou libérale ainsi que tout acheteur professionnel qui achète des produits dans le cadre de son activité professionnelle.</p>
+                <p class="law-text"><span class="bold brown">« Consommateur(s) »</span>: Ce terme désigne exclusivement le ou les Acheteurs personnes physiques qui achètent des produits proposés par la société « le Castel srl» à distance à des fin qui n'entrent pas dans le cadre de leurs activité commerciale, industrielle, artisanale ou libérale.</p>
+                <p class="law-text"><span class="bold brown">« Les produits »</span>: Les produits vendus à distance par la société « le Castel srl» soit par le biais du Site ou sur tout autre support, à savoir principalement des denrées alimentaires et plus particulièrement des pralines ainsi que d’autres spécialités comestibles telles que : (liste non exhaustive) des orangettes, du nougat, des tuiles de chocolat, des cerisettes , des mendiants, des truffes, des pâtes de fruits et des florentines.</p>
+                <p class="law-text"><span class="bold brown">« Les Parties »</span>: Désigne indifféremment une des deux Parties en ce qui concerne une commande à distance de produits vendus par la société « le Castel srl »  (au singulier), au pluriel désigne la société «le Castel srl» et l’Acheteur qui a passé une commande via le Site.</p>
+                <p class="law-section-title brown">Article 2 : Champ d’application et données de contact. </p>
+                <p class="law-text">2.1 Le Vendeur est la société « le Castel srl» est une société à responsabilité limitée dont le siège social est établi à Quai de la Maladrerie,8 à 6830 Bouillon et qui est inscrite auprès de la Banque Carrefour des entreprises sous le numéro BE 0457.902.653.  (Ci-après « Le Castel sprl” ou alternativement “le Vendeur”).</p>
+                <p class="law-text">2.2 Les présentes conditions générales de vente ont pour objet de définir les conditions auxquelles la société «le Castel srl» propose et vend ses produits aux Acheteurs. (Selon le processus de commande disponible sur le Site ou lors de toute autre vente des produits vendus par la société « le Castel srl » ayant lieu à distance).</p>
+                <p class="law-text">2.3 L’Acheteur qui passe une commande de Produits au Vendeur reconnaît également que les présentes conditions générales de vente priment sur toute autres Conditions générales ou particulières de celui/celle-ci. </p>
+                <p class="law-text">2.4 L’Acheteur qui passe une commande de Produits au Vendeur reconnait qu’il est uniquement possible de déroger aux présentes conditions générales de vente si les parties concluent au préalable une convention écrite à cet effet (signée par les parties).</p>
+                <p class="law-text">2.5 En cas de nullité, de dérogation ou d’inopposabilité d’une ou plusieurs clauses des présentes conditions générales de vente, ladite nullité, dérogation ou inopposabilité d'une ou plusieurs clauses ne portera pas préjudice à l’application des autres clauses et les parties s’engagent à remplacer la ou les clauses litigieuses/contestées par une ou plusieurs autres clauses remplissant la ou les mêmes fonctions. </p>
+                <p class="law-section-title brown">Article 3 : Réserve de propriété et moyens de preuves acceptés.</p>
+                <p class="law-text">3.1 Dans tous les cas, les produits vendus aux Acheteurs (y compris leurs éventuels accessoires), restent la propriété de la société la société «le Castel srl» aussi longtemps que l'acheteur n’a pas payé le prix de la commande dans sa totalité ainsi que les frais éventuels. </p>
+                <p class="law-text">3.2 L’Acheteur accepte expressément que les échanges électroniques (courriels) et toutes autres preuves électroniques qui témoignent de sa volonté de passer une commande (à distance) peuvent servir de preuve afin d’établir la nature de la relation contractuelle entre les parties. </p>
+                <p class="law-text">Le cas échéant, tout autres documents écrits (version papier) échangés entre les parties peuvent également être produits par les parties en cas de litige ou réclamation afin d’établir la nature de la relation contractuelle. </p>
+                <p class="law-section-title brown">Article 4 :  Offres.</p>
+                <p class="law-text">4.1 Les offres de la société la société « le Castel srl» sont toujours accompagnées d’une description complète et détaillée des produits proposés à la vente disponible sur le Site sur la page présentant les détails des Produits. </p>
+                <p class="law-text">Cette description permet à l’Acheteur d’avoir une description fidèle et complète des produits proposés et de ses composants (et allergènes en ce qui concerne les produits alimentaires) avant de s’engager. </p>
+                <p class="law-text">En cas d’erreur manifeste dans la description, la société « le Castel srl» n’est pas obligé de délivrer le produit concerné. (L’erreur est humaine).</p>
+                <p class="law-text">4.2 Si une offre est temporaire ou soumise à des conditions particulières, ceci est toujours indiqué clairement dans l’offre.</p>
+                <p class="law-section-title brown">Article 5 : Conditions pour acheter des produits via le Site et processus de commande.</p>
+                <p class="law-text">5.1 L’Acheteur s'engage à avoir l'âge légal requis à la date de la commande. </p>
+                <p class="law-text">Si la société « le Castel srl» constate ensuite que la commande a été faite par un mineur, la société «le Castel srl» se réserve le droit de refuser cette commande.</p>
+                <p class="law-text">5.2 L’Acheteur quel qu’il soit est seul(e) responsable de l’exactitude des informations qu’il fournit via le Site. La société « le Castel srl» ne peut jamais être tenu responsable dans le cas où il utilise les informations incorrectes qui auront été fournies par le client dans le cadre d'une commande.</p>
+                <p class="law-text">5.3 Le processus de commande à distance de produits proposés par la société la société « le Castel srl» sur son site se déroule selon les étapes suivantes :</p>
+                <p class="law-text">a/ L’Acheteur rempli un bon de commande en ligne où il indique les articles qu’il souhaite acheter ainsi que leur quantité et son accord avec les présentes conditions générales de vente via une case à cocher et envoie le bon de commande ou alternativement il envoie un e-mail à la société «le Castel srl» ou prend contact par un autre moyen.</p>
+                <p class="law-text">b/ La société «le Castel srl» prend ensuite contact avec l’Acheteur pour fixer les derniers détails : obtenir l’adresse de livraison et le numéro de compte bancaire et lui transmet l’offre finale en lui demandant également son acceptation des présentes conditions générales de vente (si le premier contact n’a pas eu lieu via un bon de commande) qui lui sont communiqués avec l’offre.</p>
+                <p class="law-text">c/ Le Client renvoie le document signé et accepte les conditions générales de vente, à ce moment il confirme son engagement à l’égard de la société la société «le Castel srl» en ce qui concerne cette commande.</p>
+                <p class="law-text">5.4 La commande devient définitive pour la société « le Castel srl» lorsque celle-ci reçoit l’approbation de la transaction (du paiement) de son prestataire de service de paiement. </p>
+                <p class="law-text">L’Acheteur quel qu’il soit comprend et accepte qu'aucune commande n’est acceptée ni traitée par la société « le Castel srl» sans paiement valide au nom du titulaire (enregistré) de la carte.</p>
+                <p class="law-text">5.5 La société « le Castel srl», dès réception de la confirmation du paiement, envoie à l'Acheteur un courriel (via l’adresse qu’il ou elle a renseigné) avec la confirmation de sa commande, un récapitulatif des produits commandés et en pièce jointe une copie des présentes conditions générales de vente dans un format qui peut être enregistré ou imprimé facilement par l’Acheteur (par exemple PDF). </p>
+                <p class="law-section-title brown">Article 6 : Prix et moyens de paiement acceptés.</p>
+                <p class="law-text">6.1 Toute commande passée auprès de la société la société « le Castel srl» est soumise à l'application du droit et des taxes belges étant donné que la société «le Castel srl» ne livre pas en dehors de l’Union européenne. </p>
+                <p class="law-text">6.2. Tous les prix des produits indiqués sur le Site sont des prix en euros toutes taxes comprises mais hors frais de port. Les frais de port sont calculés sur le montant total du panier lors de la finalisation d’une commande et indiqués sur le bon de commande ou offre finale envoyée par la société « le Castel srl » à l’Acheteur. </p>
+                <p class="law-text">6.3. La société «le Castel srl» se réserve le droit de modifier ses prix à tout moment (par exemple lors de changements de tarifs TVA), mais les produits seront facturés aux Acheteurs selon les prix affichés au moment de l'enregistrement de la commande. </p>
+                <p class="law-text">6.4 La société «le Castel srl» accepte les paiements par virement ou paiement sur place en cas de  récupération de la marchandise par l’Acheteur chez « le Castel srl ».</p>
+                <p class="law-section-title brown">Article 7 :  Livraisons et exécution des contrats.</p>
+                <p class="law-text">7.1 Les livraisons prennent place à l’adresse de livraison communiquée par l'Acheteur lors de la finalisation de sa commande.</p>
+                <p class="law-text">L’adresse de livraison fournie par l'acheteur doit se trouver en Belgique. Si l'acheteur indique une adresse de livraison dans un autre pays, la société «le Castel srl» se réserve le droit de refuser la commande si ce pays n’est pas indiqué sur la liste de pays indiquée sur son site. (La société «le Castel srl» ne livre pas en dehors des pays indiqués.)</p>
+                <p class="law-text">7.2 La société «le Castel srl» propose les moyens de livraison suivants :</p>
+                <ul>
+                    <li class="law-text">Livraison par un tiers transporteur (A savoir Bpost ou mondial relay ;</li>
+                    <li class="law-text">Retrait sur place</li>
+                </ul>
+                <p class="law-text">Sur base du mode de livraison choisi par l’Acheteur, un montant forfaitaire couvrant les frais de livraison est ajouté au montant de l’offre, telle que reprise via le lien……... </p>
+                <p class="law-text">Ce montant est toujours repris sur la page de finalisation de la commande.</p>
+                <p class="law-text">7.3 Si la société « le Castel srl» effectue elle-même des livraisons, l’Acheteur comprend et accepte que les délais de livraison sont mentionnés à titre indicatif et n’engagent aucunement la responsabilité de la société «le Castel srl». </p>
+                <p class="law-text">7.4 La société « le Castel srl» s’engage à tout mettre en œuvre pour garantir le respect des délais de livraison, toutefois, l’Acheteur qu’il s’agit d’une obligation de moyens et accepte que la société «le Castel srl» n’est jamais responsable des retards de livraison et/ou non-livraison d’une commande si ces retards sont dus au refus du paiement par l’émetteur de la carte de l’Acheteur à d’autres tiers ou en cas de la survenance d’un événement imprévisible ou de force majeure. </p>
+                <p class="law-text">7.5 Si la société « le Castel srl» ne peut pas livrer à temps, la société «le Castel srl» fera en sorte d’en informer l’Acheteur avant la date de livraison prévue sauf si elle n’est pas informée à temps de ce retard par la société a qui elle fait appel pour la livraison. </p>
+                <p class="law-text">7.6 Tous les risques auxquels les biens sont exposés à partir de la livraison et notamment, pendant le transport, sont toujours à charge de l’Acheteur, et ce quel que soit le mode de transport convenu.</p>
+                <p class="law-text">Si l’Acheteur opte pour le retrait en personne, les risques liés au transport sont à charge de l’Acheteur dès prise de possession des produits.</p>
+                <p class="law-section-title brown">Article 8 :   Droit de rétractation (uniquement pour les Consommateurs)</p>
+                <p class="law-text">8.1 Tout consommateur qui effectue un achat via le Site dispose en principe d'un délai de 14 jours calendrier à compter de la conclusion du contrat pour se rétracter dudit contrat.</p>
+                <p class="law-text">Néanmoins dans le cas de denrées périssables il existe des exceptions qui sont applicable à tous les produits vendus par la société « le Castel srl » en vertu de l’article VI.53, 4 et 5 du code de droit économique belge.</p>
+                <p class="law-text">Dans ces cas de figure l’Acheteur - Consommateur comprend et accepte qu’il ne pourra pas prétendre à un quelconque droit de rétractation vu la nature des produits vendus à distance par la société le castel srl.</p>
+                <p class="law-text">8.2 Par ailleurs, si les marchandises livrées par les soins de la société la société «le Castel srl» ont été endommagées pendant le transport, ne correspondent pas aux articles figurant sur le bon de livraison ou ne correspondent pas avec les articles que le Consommateur a commandés, le Consommateur doit le signaler à la société «le Castel srl» le plus tôt possible, et au plus tard dans les 3 jours de la découverte en envoyant un e-mail à <a class="link brown" href="mailto:lagourmandise96@gmail.com">lagourmandise96@gmail.com</a> et doit ensuite retourner à la société «le Castel srl» les articles en question dans les 14 jours suivant la réception.</p>
+                <p class="law-text">8.3 La société « le Castel srl» n’est en aucun cas responsable des dommages consécutifs liés à une livraison tardive ou à une absence de livraison par le transporteur. Dans le cas où la responsabilité de la société Castel Srl devrait tout même être engagée pour une raison quelconque, celle-ci sera dans tous les cas de figure limitée à la valeur des articles dont il a été prouvé qu'ils n'ont pas été reçus par le Consommateur.</p>
+                <p class="law-text">8.4 Si le consommateur fait usage de son droit de rétractation ou de retour conformément à ce qui est prévu dans cet article, les frais d'envoi retour sont à ses frais. Le consommateur aura droit à un remboursement selon le moyen de paiement et à destination du compte qu’il ou elle indique ou à un échange de produit, de la valeur du carton commandé. La société « le Castel srl» se réserve le droit de refuser le remboursement si le colis ne revient pas dans les conditions requises. Le colis ne peut pas avoir été ouvert.</p>
+                <p class="law-section-title brown">Article 9 : Conformité des produits livrés et garantie légale.</p>
+                <p class="law-text">9.1 La société « le Castel srl» s’engage à mettre tout en œuvre selon les règles de l’art et en bon père de famille en vue de la réalisation de la commande conformément aux attentes de l’Acheteur en tenant compte des spécifications du produit commandé. (Obligation de moyen)</p>
+                <p class="law-text">La société « le Castel srl» n’est jamais tenue de mettre en œuvre des moyens de nature disproportionnée au regard de l’objectif à atteindre et n’est pas responsable en cas de la survenance d’un élément de force majeure, de nature imprévisible ou du fait de tiers.</p>
+                <p class="law-text">9.2 L’Acheteur comprend et accepte que si le défaut est mineur, il ne peut pas exiger le remboursement.</p>
+                <p class="law-text">9.3 (<span class="underline">Uniquement applicable aux consommateurs</span>) En outre, les Consommateurs bénéficient du délai de garantie légale minimum de deux ans en cas de non-conformité. Cela veut dire qu’en cas de défauts des biens qui sont découverts jusqu’à 2 ans suivant la livraison, possibilité simplifiée pour le consommateur de demander la résolution du contrat pour défaut de conformité ou de demander une mise en conformité ou une réduction proportionnelle du prix.</p>
+                <p class="law-text">Si la constatation du défaut est faite dans les 6 premiers mois, le défaut est présumé exister depuis la livraison. Le vendeur doit prouver le contraire s’il n’est pas d’accord. Si la constatation est faite plus de de 6 mois après la livraison, le consommateur est tenu de prouver l'existence de la non-conformité au moment de la livraison.</p>
+                <p class="law-section-title brown">Article 10 :  Durée du contrat et résiliation.</p>
+                <p class="law-text">10.1 L’Acheteur peut, s’il agit d’un contrat à durée indéterminée, résilier le contrat pendant toute la durée du contrat, compte tenu (le cas échéant) des règles de résiliation mentionnées dans le contrat. Si aucune durée n’est indiquée alors le délai de résiliation est d’un mois entre la signification de l’intention de résilier le contrat et la résiliation effective du contrat.</p>
+                <p class="law-text">10.2 Un contrat à durée déterminée ne peut durer que 2 ans (au maximum).</p>
+                <p class="law-text">10.3 Si un contrat à durée déterminée contient une clause de reconduction tacite, le contrat devient un contrat à durée indéterminée avec un délai de résiliation d’un mois et cette clause est mentionnée expressément et encadrée sur la page de garde du contrat spécifique et contient les conséquences juridiques et modalités de la reconduction tacite</p>
+                <p class="law-section-title brown">Article 11 :  Force Majeure et cas d’exonération de responsabilité.</p>
+                <p class="law-text">11.1 La société «le Castel srl» est exonérée de toute responsabilité en cas d’obligation inexécutée, en tout ou partie, ou retardée par suite d’un cas de force majeure, un fait du prince, un cas fortuit ou tout autre événement indépendant de sa volonté, provoqué par l’Acheteur ou par des tiers qui a un impact détriment a l'exécution de la commande.</p>
+                <p class="law-text">11.2 Sont notamment (mais pas exclusivement) considérés comme cas de force majeure ou causes exonératoires de la responsabilité de la société la société «le Castel srl» : les conflits du travail, les retards de livraison du fournisseur, les pénuries de matériel ou de moyens de transport, les guerres, les émeutes, les incendies, la rupture de stocks, les catastrophes naturelles, les intempéries, les pandémies, les épidémies, les mesures de confinement ou les mesures gouvernementales ayant un impact négatif quelconque sur l’exécution des obligation de la société «le Castel srl»,  des actes de terrorisme, des accidents de la route grave durant le transport/trajet vers le lieu de livraison, des maladies graves ou décès inopinés du personnel/membre du personnel , des problèmes liés aux réseaux de télécommunications lorsqu’ils ont pour effet de retarder ou rendre impossible l’exécution du contrat. A cette liste doit s’ajouter tous les cas de figure reconnus par la jurisprudence ou les usages du secteur concerné.</p>
+                <p class="law-text">11.3 Si la société «le Castel srl» est présumé se trouver dans un des cas d’exonération décrits au point 11.2, la société «le Castel srl» n’aura pas à établir l’imprévisibilité, ni l’irrésistibilité de l'événement, ni l’impossibilité d’exécution du contrat. </p>
+                <p class="law-text">11.4 Dans les cas prévus à l’article 11.2, sauf disposition légale impérative contraire, la société la société «le Castel srl» n'est tenue à aucune indemnisation ni dommage, quelle que soit la nature du dommage, directe ou indirecte, prévisible ou imprévisible, en ce y compris le dommage d'exploitation et les dommages aux personnes, aussi bien à l'égard de l’Acheteur (consommateur ou professionnel) qu'à l'égard des tiers.</p>
+                <p class="law-text">11.5 Concrètement, lors de sa prise de connaissance de la survenance d’un évènement prévu à l’article 11.2, la société «le Castel srl» informera à bref délai l’Acheteur (quel qu’il soit et si c’est techniquement et commercialement faisable) de la survenance du cas de force majeure ou de la cause exonératoire de responsabilité via l’adresse renseignée lors de la commande.</p>
+                <p class="law-text">11.6 Dans ce type de cas prévus à l’article 11.2, la société «le Castel srl» se réserve le droit de prolonger le délai d’exécution du contrat d’une période égale à celle pendant laquelle le cas de force majeure ou la cause exonératoire de responsabilité a duré. </p>
+                <p class="law-text">11.7 Si ces faits (prévus à l’article 11.2) peuvent compromettre l’exécution de la commande, la société «le Castel srl» se réserve à sa propre discrétion le droit de résilier le contrat sans engagement ni responsabilité de sa part. Une telle résiliation peut avoir lieu par l’envoi d’un simple e-mail à l’adresse renseignée par l’Acheteur lors de sa commande. </p>
+                <p class="law-text">La société «le Castel srl», si elle n’a pas engagé de coûts, remboursera l’Acheteur par le même moyen de paiement et sauf indication contraire de l’Acheteur sur le compte indiqué lors de la commande.</p>
+                <p class="law-text">11.8 En tout état de cause, la responsabilité de la société «le Castel srl» est limitée au montant du contrat sans préjudice du droit pour le client de demander la résolution du contrat en justice, conformément à l’article 1184 du Code civil belge.</p>
+                <p class="law-section-title brown">Article 12 :  Propriété Intellectuelle. </p>
+                <p class="law-text">12.1. L’Acheteur reconnaît expressément que tous les droits de propriété intellectuelle liés au Site, à l’information fournie par la société «le Castel srl» via le Site mais également la mise en page et le contenus de documents contractuels telles les présentes conditions générales de vente et les communications de la société «le Castel srl» et ses logos/marques appartiennent exclusivement à la société «le Castel srl» ou d’autres sociétés pour ayant accordé une licence à la société «le Castel srl» et ne peuvent faire l’objet d’aucune reproduction, exploitation, contrefaçon sans l'accord écrit et préalable de la société «le Castel srl» et le cas échéant de ses sous-traitants ou autres ayants droits.</p>
+                <p class="law-text">12.2. Si un Acheteur commet une infraction au présent paragraphe, il sera immédiatement redevable à la société «le Castel srl» d’une amende forfaitaire de 2000 euros par infraction et par journée ou l’infraction persiste sans préjudices d’éventuels dommages et intérêts réclamés par la société «le Castel srl» pour tous dommages directs et indirects qu’elle aurait subi.</p>
+                <p class="law-section-title brown">Article 13 :  Traitement de données à caractère personnel et interdiction de blocage géographique. </p>
+                <p class="law-text">13.1 L’Acheteur qui passe une commande accepte que ses données de contact et de facturation soient traitées par la société «le Castel srl» conformément avec ce qui est renseigné dans sa politique vie privée & cookies. </p>
+                <p class="law-text">La société «le Castel srl» garantit à l'Acheteur que le traitement de ces données à lieu dans des conditions raisonnables de sécurité pour la finalité et le délai prévu dans sa politique vie privée & cookie.</p>
+                <p class="law-text">13.2 La société «le Castel srl» n’applique jamais des conditions générales d’accès différentes aux biens ou aux services proposés en ligne, pour des motifs liés à la nationalité, au lieu de résidence ou d’établissement d’un client, à moins qu’ils n’agissent conformément au droit de l’Union ou aux législations des pays membres conformément au droit de l’Union :</p>
+                <p class="law-text">13.3 La société «le Castel srl» garantit qu’elle n’exerce pas non plus de discrimination au sein d’une même catégorie de paiement ou d’une même marque pour des raisons liées à la nationalité de l’Acheteur, à son lieu de résidence ou à son lieu d’établissement, à la localisation du compte de paiement ou au lieu d’établissement du prestataire de services de paiement ; au lieu d’émission de l’instrument de paiement. </p>
+                <p class="law-section-title brown">Article 14 : Réclamations et litiges.</p>
+                <p class="law-text">14.1 Toute réclamation ou demande de contact peut être envoyée à la société «le Castel srl» par courrier postal à l’adresse du siège de la société «le Castel srl» ou par e-mail à : <a class="link brown" href="mailto:lagourmandise96@gmail.com">lagourmandise96@gmail.com</a></p>
+                <p class="law-text">14.2 Le droit belge est exclusivement applicable à tous les contrats conclus entre la société «le Castel srl» et un ou des Acheteurs au sens des présentes Conditions générales, quel que soit leur lieu de résidence. </p>
+                <p class="law-text">Tous les litiges qui sont en lien ou découlent des offres de la société la société «le Castel srl» sont soumises à la compétence exclusive des cours et tribunaux belges de l’arrondissement judiciaire du Luxembourg qui sont seuls compétents en cas de litiges imputant au contrat.</p>
+                <p class="law-text">14.3 Si, pour des raisons liées au droit international, une autre législation serait quand-même applicable, celle-ci serait interprétée en premier lieu conformément aux dispositions des lois applicables belges relatives aux pratiques du marché et à la protection du consommateur.  </p>
+                <p class="law-text">14.4 (<span class="underline">Uniquement pour les Consommateurs</span>) Dans le cadre du règlement extrajudiciaire des litiges, le Service de Médiation des Consommateurs mis en place par le Gouvernement Fédéral est compétent pour recevoir toute demande de règlement extrajudiciaire de litiges de consommation. Ce service traitera la demande lui-même ou la transférera à l'entité qualifiée. Vous pouvez contacter le Service de Médiation des Consommateurs via le lien suivant : <a class="link brown" href="http://www.mediationconsommateur.be//fr" target="_blank">http://www.mediationconsommateur.be//fr</a></p>
+                <p class="law-text">14.5 En cas de litige <span class="bold">transfrontalier</span> (<span class="underline">Uniquement pour les Consommateurs</span>), vous pouvez de plus faire appel à le Site "Online Dispute Resolution" de l'Union Européenne via le lien: <a class="link brown" href="https://ec.europa.eu/odr" target="_blank">https://ec.europa.eu/odr</a></p>
+                <button class="open close-law-button" id="close-cgv-button">Fermer</button>
+            </div>
+        </section>
+    </div>
+    <footer class="footer beige">
+        <div class="footer-flex footer-div">
+            <div>
+                <p class="open">La Gourmandise</p>
+                <p class="open">Quai de la Maladrerie 8</p>
+                <p class="open">6830 Bouillon</p>
+                <p class="open">Belgique</p>
+                <br>
+            </div>
+            <div class="right-footer">
+                <p><a class="open special-link beige" href="./contact.html">Contact</a></p>
+                <p><a class="open beige special-link" href="mailto:lagourmandise96@gmail.com">&#9993; lagourmandise96@gmail.com</a></p>
+                <p class="open">&#9990; 061 46 78 48</p>
+                <p class="open">TVA: BE 0457.902.653</p>
+                <br>
+            </div>
+        </div>
+        <div class="footer-flex-center">
+            <p><a class="open special-link beige" href="./plan-site.html">Plan du site</a></p>
+            <p class="footer-disappear">&nbsp;&#8226;&nbsp;</p>
+            <p><a class="open special-link beige" href="./utilisation.html">Conditions d'utilisation</a></p>
+            <p class="footer-disappear">&nbsp;&#8226;&nbsp;</p>
+            <p><a class="open special-link beige" href="./confidentialite.html">Politique de confidentialité</a></p>
+            <p class="footer-disappear">&nbsp;&#8226;&nbsp;</p>
+            <p class="open">Créé par Ben Duterme</p>
+        </div>
+    </footer>
+    <script src="./lib/js/smtp.js"></script>
+    <script src="./lib/js/shop.js"></script>
+    <script src="./lib/styles/styles.js"></script>
+</body>
+</html>
