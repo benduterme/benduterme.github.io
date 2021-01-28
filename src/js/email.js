@@ -72,7 +72,7 @@ function contact () {
           const toEmail = encodeURIComponent(data.toemail)
           Email.send({
             SecureToken: data.token,
-            To: "vincent_gougeon@hotmail.com",
+            To: "lagourmandise96@gmail.com",
             From: data.email,
             Subject: "Demande de renseignements",
             Body: message,
