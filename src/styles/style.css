@@ -539,6 +539,14 @@ nav ul {
     color: #8D6E63;
 }
 
+.back-appear {
+    display: none;
+}
+
+.retour {
+    height: 1.2rem;
+}
+
 /* Store */
 
 .store-div {
@@ -1031,6 +1039,10 @@ input {
     }
     .back-delete {
         display: none;
+    }
+
+    .back-appear {
+        display: block;
     }
 
     .footer-flex {
