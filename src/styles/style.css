@@ -1078,7 +1078,7 @@ input {
     }
 
     .radio-button label {
-        width: 20rem;
+        width: 15rem;
     }
 }
 
@@ -1098,7 +1098,7 @@ input {
         height: 45px;
     }
 
-    #cgv {
+    .inpage-law {
         width: 90%;
         height: 95vh;
     }
