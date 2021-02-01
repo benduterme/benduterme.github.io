@@ -477,7 +477,7 @@ function shop() {
         + `Nous avons le plaisir de vous annoncer que votre commande est prête et disponible dans votre magasin.<br><br>`
         + `Nous vous invitons à venir la récupérer durant les heures d'ouverture de celui-ci, à savoir du mardi au dimanche, de 10 h 00 à 12 h 00 et de 13 h 30 à 18 h 00.<br><br>`
         + `Merci pour votre confiance et nous espérons que vous serez entièrement satisfaits par nos chocolats.<br><br>`
-        + `<img src="https://www.lagourmandisebouillon.be/src/img/gourmandise-logo.PNG" alt="La Gourmandise Bouillon">`
+        + `<img src="" alt="La Gourmandise Bouillon">`
       
       if(this.user.recupMarchandise === "Magasin") {
         Email.send({
