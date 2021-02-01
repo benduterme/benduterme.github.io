@@ -328,7 +328,7 @@ function shop() {
       const toEmail = encodeURIComponent(data.toemail)
       Email.send({
         SecureToken: data.token,
-        To: "lagourmandise96@gmail.com",
+        To: "lagourmandisebouillon@gmail.com",
         From: data.email,
         Subject: "Demande de commande",
         Body: message,
@@ -390,7 +390,7 @@ function shop() {
       if (this.user.recupMarchandise === "Livraison") {
         Email.send({
           SecureToken: data.token,
-          To: "lagourmandise96@gmail.com",
+          To: "lagourmandisebouillon@gmail.com",
           From: data.email,
           Subject: "Votre commande a été expédiée",
           Body: message2,
@@ -466,7 +466,7 @@ function shop() {
 
       Email.send({
         SecureToken: data.token,
-        To: "lagourmandise96@gmail.com",
+        To: "lagourmandisebouillon@gmail.com",
         From: data.email,
         Subject: "Confirmation de votre commande",
         Body: message3,
@@ -482,7 +482,7 @@ function shop() {
       if(this.user.recupMarchandise === "Magasin") {
         Email.send({
           SecureToken: data.token,
-          To: "lagourmandise96@gmail.com",
+          To: "lagourmandisebouillon@gmail.com",
           From: data.email,
           Subject: "Votre commande est prête",
           Body: message4,
