@@ -245,6 +245,15 @@ function shop() {
         return this.getTotal()
       }
     },
+    getRandomNumber() {
+      return Math.floor(Math.random() * Math.floor(9));
+    },
+    getRefCom() {
+      return `${this.getRandomNumber()}${this.getRandomNumber()}${this.getRandomNumber()}${this.getRandomNumber()}${this.getRandomNumber()}${this.getRandomNumber()}`
+    },
+    getQteTotal() {
+      return this.getPanier().map(([_, article]) => article.count).reduce((acc, count) => acc+count, 0);
+    },
     sendEmail() {
       this.errors = []
       this.success = []
@@ -255,8 +264,10 @@ function shop() {
       if ( (!this.user.nom) || (!this.user.prenom) || (!this.user.email) ) {
         errors.push("Il manque des informations personnelles")
       }
-      if ( (!this.user.date) ) {
-        errors.push("Veuillez indiquer une date d'enlèvement souhaitée")
+      if (this.user.recupMarchandise === "Magasin") {
+        if ( (!this.user.date) ) {
+          errors.push("Veuillez indiquer une date d'enlèvement souhaitée")
+        }
       }
       if ( (!this.user.recupMarchandise) ) {
         errors.push("Veuillez indiquer comment vous souhaitez récupérer votre marchandise")
@@ -280,6 +291,8 @@ function shop() {
         return
       }
 
+      let refCom = this.getRefCom();
+
       let message =
             `Demande de commande:<br>`
           + `-------------------<br><br>`
@@ -287,10 +300,14 @@ function shop() {
       if (this.user.telephone)
         message += ` (${this.user.telephone})<br><br>`
       else {
-        message += '<br>'
+        message += '<br><br>'
       }
 
-      message+= `Date d'enlèvement: ${this.user.date}<br><br>`
+      message += `Référence: ${refCom}<br><br>`
+
+      if(this.user.recupMarchandise === "Magasin") {
+        message+= `Date d'enlèvement: ${this.user.date}<br><br>`
+      }
       
       message += `<table>`
 
@@ -311,7 +328,7 @@ function shop() {
         message += `<tr><td colspan="2">Frais de livraison:</td><td>${shippingPrice} €</td></tr>`
       }
 
-      message += `<tr><td colspan="2">Total:</td><td>${total} €</td></tr>`
+      message += `<tr><td>Total:</td><td>${this.getQteTotal()}</td><td>${total} €</td></tr>`
 
       message += `</table><br><br>`
 
@@ -337,12 +354,13 @@ function shop() {
           this.setSuccess(["Merci pour votre commande. Nous reviendrons vers vous dans les plus brefs délais."])
         }
         else {
-          this.setErrors(["Il y a eu un problème avec l'envoi de votre email."])
+          this.setError(["Il y a eu un problème avec l'envoi de votre email."])
         }
       })
 
       let message2 = 
-          `Madame, Monsieur,<br><br>`
+          `Commande n° ${refCom}<br><br>`
+        + `Madame, Monsieur,<br><br>`
         + `Nous avons le plaisir de vous confirmer l'envoi de votre commande.<br>`
         + `Mondial Relay vous informera bientôt par message ou par e-mail de l'arrivée de votre colis.<br>`
         + `Nous espérons que votre commande répondra à toutes vos attentes.<br><br>`
@@ -357,7 +375,9 @@ function shop() {
         message2 += '<br><br>'
       }
 
-      message2 += `Date d'enlèvement: ${this.user.date}<br><br>`
+      if(this.user.recupMarchandise === "Magasin") {
+        message+= `Date d'enlèvement: ${this.user.date}<br><br>`
+      }
       
       message2 += `<table>`
 
@@ -398,16 +418,17 @@ function shop() {
       }
 
       let message3 = 
-        `Madame, Monsieur,<br><br>`
+        `Commande n° ${refCom}<br><br>`
+        + `Madame, Monsieur,<br><br>`
         + `Merci pour votre commande chez La Gourmandise.<br>`
         + `Nous vous remercions pour votre confiance et mettrons tout en oeuvre pour qu'elle réponde à vos attentes.<br>`
         if (this.user.modePaiement === "Virement") {
           message3 += `Nous vous invitons, dès à présent, à procéder au paiement de la commande pour un envoi dans les plus brefs délais.<br>`
           message3 += `Les coordonnées sont les suivantes:<br><br>`
-          message3 += `Nom: SRL Le Castel<br>`
+          message3 += `Nom: La Gourmandise Bouillon<br>`
           message3 += `IBAN: BE45 7326 6015 6789<br>`
           message3 += `BIC: CREGBEBB<br>`
-          message3 += `Communication: ${this.user.nom} ${this.user.prenom} ${this.user.date}<br><br>`
+          message3 += `Communication: ${this.user.nom} ${this.user.prenom} ${refCom}<br><br>`
           message3 += `À réception du versement, `
           if (this.user.recupMarchandise === "Livraison") {
             message3 += `nous vous confirmerons l'envoi de votre commande rapidement.<br><br>`
@@ -434,7 +455,11 @@ function shop() {
         message3 += '<br><br>'
       }
 
-      message3 += `Date d'enlèvement: ${this.user.date}<br><br>`
+      if(this.user.recupMarchandise === "Magasin") {
+        message+= `Date d'enlèvement: ${this.user.date}<br><br>`
+      } else {
+        message+= `<br>`
+      }
       
       message3 += `<table>`
 
@@ -473,7 +498,8 @@ function shop() {
       })
 
       let message4 = 
-        `Cher client,<br><br>`
+        `Commande n° ${refCom}<br><br>`
+        + `Madame, Monsieur,<br><br>`
         + `Nous avons le plaisir de vous annoncer que votre commande est prête et disponible dans votre magasin.<br><br>`
         + `Nous vous invitons à venir la récupérer durant les heures d'ouverture de celui-ci, à savoir du mardi au dimanche, de 10 h 00 à 12 h 00 et de 13 h 30 à 18 h 00.<br><br>`
         + `Merci pour votre confiance et nous espérons que vous serez entièrement satisfaits par nos chocolats.<br><br>`
