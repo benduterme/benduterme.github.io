@@ -240,15 +240,15 @@
                     <label class="open" for="phone">Téléphone:</label>
                     <input class="open" type="tel" name="phone" x-model="user.telephone">
                 </div>
-                <div class="form-div">
-                    <label class="open" for="date">Date d'enlèvement souhaitée:<span class="red">*</span></label>
-                    <input class="open" type="text" name="date" x-model="user.date">
-                </div>
                 <p class="input-text open">Récupération de la marchandise<span class="red">*</span></p>
                 <div class="form-div">
                     <div class="radio-button">
                         <input name="delivery-option" type="radio" value="Magasin" x-model="user.recupMarchandise">
                         <label class="open" for="Magasin">Enlèvement en magasin</label>
+                    </div>
+                    <div class="form-div country" x-show="user.recupMarchandise === 'Magasin'">
+                        <label class="open" for="date">Date d'enlèvement souhaitée:<span class="red">*</span></label>
+                        <input class="open" type="text" name="date" x-model="user.date">
                     </div>
                     <div class="radio-button">
                         <input name="delivery-option" type="radio" value="Livraison" x-model="user.recupMarchandise">
