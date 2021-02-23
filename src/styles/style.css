@@ -1165,16 +1165,46 @@ input {
     .section-img {
         width: 300px;
     }
+
+    #index-magasin {
+        width: 300px;
+        height: 300px;
+    }
+
+    #index-cadeaux-ovidias {
+        width: 300px;
+        height: 400px;
+    }
 }
 
 @media only screen and (max-width: 300px) {
     .section-img {
         width: 250px;
     }
+
+    #index-magasin {
+        width: 250px;
+        height: 250px;
+    }
+
+    #index-cadeaux-ovidias {
+        width: 250px;
+        height: 333px;
+    }
 }
 
 @media only screen and (max-width: 250px) {
     .section-img {
         width: 200px;
+    }
+
+    #index-magasin {
+        width: 200px;
+        height: 200px;
+    }
+
+    #index-cadeaux-ovidias {
+        width: 200px;
+        height: 266px;
     }
 }
