@@ -8,9 +8,9 @@ const DATA = {
       type: "pralibel",
       typeName: "Pralibel",
       prix: {
-        "250 g": 7.20,
-        "500 g": 14.40,
-        "1 kg": 28.80,
+        "250 g": 8.,
+        "500 g": 16.,
+        "1 kg": 32.,
       },
       articles: [
         {id: "pralibel-1", nom: "Assortiment Chocolats noirs", img: "./src/img/Pralibel/logo-pralibel.jpg", choix: [{value: "250 g", count: 0, type: "poids", poids: 0.25}, {value: "500 g", count: 0, type: "poids", poids: 0.5}, {value: "1 kg", count: 0, type: "poids", poids: 1}]},
@@ -28,9 +28,9 @@ const DATA = {
       type: "ovidias",
       typeName: "Ovidias",
       prix: {
-        "250 g": 5.5,
-        "500 g": 11.,
-        "1 kg": 22.,
+        "250 g": 6.,
+        "500 g": 12.,
+        "1 kg": 24.,
       },
       articles: [
         {id: "ovidias-2", nom: "Assortiment Chocolats noirs", img: "./src/img/Ovidias/ovidias-logo.jpg", choix: [{value: "250 g", count: 0, type: "poids", poids: 0.25}, {value: "500 g", count: 0, type: "poids", poids: 0.5}, {value: "1 kg", count: 0, type: "poids", poids: 1}]},
@@ -50,18 +50,18 @@ const DATA = {
 
       },
       articles: [
-        {id: "confiseries-1", nom: "Orangettes - 180 g", img: "./src/img/Cadeaux/Orangettes.jpg", choix: [{value: 6., count: 0, type: "euros", poids: 0.18}]},
-        {id: "confiseries-2", nom: "Cerisettes - 180 g", img: "./src/img/Pralibel/confiseries/cerisette.png", choix: [{value: 7., count: 0, type: "euros", poids: 0.18}]},
-        {id: "confiseries-3", nom: "Mendiants - 180 g", img: "./src/img/Cadeaux/Mendiants.jpg", choix: [{value: 6., count: 0, type: "euros", poids: 0.18}]},
-        {id: "confiseries-4", nom: "Gianduja - 180 g", img: "./src/img/Cadeaux/Gianduja.png", choix: [{value: 6., count: 0, type: "euros", poids: 0.18}]},
-        {id: "confiseries-5", nom: "Liqueurs - 180 g", img: "./src/img/Cadeaux/liqueurs.jpg", choix: [{value: 7., count: 0, type: "euros", poids: 0.18}]},
-        {id: "confiseries-6", nom: "Truffes - 250 g", img: "./src/img/Cadeaux/Truffes.jpg", choix: [{value: 6., count: 0, type: "euros", poids: 0.25}]},
-        {id: "confiseries-7", nom: "Pâtes de fruits - 180 g", img: "./src/img/Cadeaux/Pâtes de Fruits.jpg", choix: [{value: 6., count: 0, type: "euros", poids: 0.18}]},
-        {id: "confiseries-8", nom: "Pralines sans sucre - 250 g", img: "./src/img/Cadeaux/Stevia.jpg", choix: [{value: 9., count: 0, type: "euros", poids: 0.25}]},
-        {id: "confiseries-9", nom: "Florentines - ± 10 pcs", img: "./src/img/Cadeaux/florentines.jpg", choix: [{value: 6., count: 0, type: "euros", poids: 0.25}]},
-        {id: "confiseries-10", nom: "Palets de chocolat - 17 pcs", img: "./src/img/Cadeaux/palets-chocolat.png", choix: [{value: 6., count: 0, type: "euros", poids: 0.25}]},
-        {id: "confiseries-11", nom: "Assortiment - 24 mini tablettes", img: "./src/img/Cadeaux/assortiment-noël.png", choix: [{value: 17., count: 0, type: "euros", poids: 0.25}]},
-        {id: "confiseries-12", nom: "Nougats - 150 g", img: "./src/img/Cadeaux/nougats.PNG", choix: [{value: 6.6, count: 0, type: "euros", poids: 0.15}]},
+        {id: "confiseries-1", nom: "Orangettes - 180 g", img: "./src/img/Cadeaux/Orangettes.jpg", choix: [{value: 7., count: 0, type: "euros", poids: 0.18}]},
+        {id: "confiseries-2", nom: "Cerisettes - 180 g", img: "./src/img/Pralibel/confiseries/cerisette.png", choix: [{value: 8., count: 0, type: "euros", poids: 0.18}]},
+        {id: "confiseries-3", nom: "Mendiants - 180 g", img: "./src/img/Cadeaux/Mendiants.jpg", choix: [{value: 7., count: 0, type: "euros", poids: 0.18}]},
+        {id: "confiseries-4", nom: "Gianduja - 180 g", img: "./src/img/Cadeaux/Gianduja.png", choix: [{value: 7., count: 0, type: "euros", poids: 0.18}]},
+        {id: "confiseries-5", nom: "Liqueurs - 180 g", img: "./src/img/Cadeaux/liqueurs.jpg", choix: [{value: 8., count: 0, type: "euros", poids: 0.18}]},
+        {id: "confiseries-6", nom: "Truffes - 250 g", img: "./src/img/Cadeaux/Truffes.jpg", choix: [{value: 7., count: 0, type: "euros", poids: 0.25}]},
+        {id: "confiseries-7", nom: "Pâtes de fruits - 180 g", img: "./src/img/Cadeaux/Pâtes de Fruits.jpg", choix: [{value: 7., count: 0, type: "euros", poids: 0.18}]},
+        {id: "confiseries-8", nom: "Pralines sans sucre - 250 g", img: "./src/img/Cadeaux/Stevia.jpg", choix: [{value: 10., count: 0, type: "euros", poids: 0.25}]},
+        {id: "confiseries-9", nom: "Florentines - ± 10 pcs", img: "./src/img/Cadeaux/florentines.jpg", choix: [{value: 7., count: 0, type: "euros", poids: 0.25}]},
+        {id: "confiseries-10", nom: "Palets de chocolat - 17 pcs", img: "./src/img/Cadeaux/palets-chocolat.png", choix: [{value: 7., count: 0, type: "euros", poids: 0.25}]},
+        {id: "confiseries-11", nom: "Assortiment - 24 mini tablettes", img: "./src/img/Cadeaux/assortiment-noël.png", choix: [{value: 18., count: 0, type: "euros", poids: 0.25}]},
+        {id: "confiseries-12", nom: "Nougats - 150 g", img: "./src/img/Cadeaux/nougats.PNG", choix: [{value: 7.6, count: 0, type: "euros", poids: 0.15}]},
       ]
     },
   ]
@@ -191,29 +191,29 @@ function shop() {
       let total = this.getPoidsTotal()
       if (this.user.paysLivraison === "Belgique/Lux") {
         if(total <= 3) {
-          return 3.75
+          return 3.90
         } else if (total <= 7) {
-          return 4
+          return 4.40
         } else {
-          return 5
+          return 5.50
         }
       }
 
       if (this.user.paysLivraison === "France") {
         if(total <= 0.5) {
-          return 5.90
+          return 6.
         } else if (total <= 1) {
-          return 6.60
+          return 6.90
         } else if (total <= 3) {
-          return 7.90
+          return 8.20
         } else if (total <= 5) {
-          return 9.20
+          return 9.80
         } else if (total <= 7) {
-          return 10.40
+          return 11.00
         } else if (total <= 10) {
-          return 14.90
+          return 15.60
         } else if (total <= 15) {
-          return 18.50
+          return 19.40
         }
       }
 
