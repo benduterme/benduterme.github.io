@@ -8,9 +8,9 @@ const DATA = {
       type: "pralibel",
       typeName: "Pralibel",
       prix: {
-        "250 g": 9.,
-        "500 g": 18.,
-        "1 kg": 36.,
+        "250 g": 9.5,
+        "500 g": 19.,
+        "1 kg": 38.,
       },
       articles: [
         {id: "pralibel-1", nom: "Assortiment Chocolats noirs", img: "./src/img/Pralibel/logo-pralibel.jpg", choix: [{value: "250 g", count: 0, type: "poids", poids: 0.25}, {value: "500 g", count: 0, type: "poids", poids: 0.5}, {value: "1 kg", count: 0, type: "poids", poids: 1}]},
