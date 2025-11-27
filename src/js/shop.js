@@ -3,7 +3,7 @@
 // ==========================================
 const EMAIL_CONFIG = {
     serviceID: "service_h1qentp",   // Ton Service ID (ex: service_z8n...)
-    templateID: "template_dz44q0a", // Ton Template ID (C'est celui que tu as créé)
+    templateID: "template_19soxfq", // Ton Template ID (C'est celui que tu as créé)
     shopEmail: "lagourmandisebouillon@gmail.com" // L'email qui reçoit les commandes
 };
 
@@ -312,3 +312,4 @@ function shop() {
     }
   }
 }
+
